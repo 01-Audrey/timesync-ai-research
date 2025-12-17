@@ -1,94 +1,55 @@
-\# TimeSync AI Research
-
-
+# TimeSync AI Research
 
 ML experimentation repository for TimeSync's AI-powered attendance monitoring system.
 
-
-
-\## 🎯 Project Goal
-
+## 🎯 Project Goal
 Train LSTM neural networks to:
+- Learn individual employee attendance patterns (80%+ accuracy)
+- Detect anomalies in real-time
+- Generate Audit Confidence Scores (0-100%) for timesheets
+- Predict task durations based on historical performance
 
-\- Learn individual employee attendance patterns (80%+ accuracy)
+## 🗓️ Timeline
+**Month 1:** LSTM pattern learning + anomaly detection  
+**Month 2:** Audit confidence scoring algorithm  
+**Month 3:** Task estimation + production integration
 
-\- Detect anomalies in real-time
+## 📊 Current Phase
+**Week 1-2:** Data preparation and initial exploration
 
-\- Generate Audit Confidence Scores (0-100%) for timesheets
+## 🔧 Tech Stack
+- **Framework:** TensorFlow/Keras
+- **Data:** Pandas, NumPy
+- **Forecasting:** Prophet
+- **Production:** FastAPI (integration phase)
+- **Database:** PostgreSQL (production)
 
-\- Predict task durations based on historical performance
+## 📂 Repository Structure
+- `data/` - Training datasets (Kaggle + synthetic)
+- `notebooks/` - Jupyter experiments and analysis
+- `models/` - Trained models and checkpoints
+- `src/` - Production-ready Python modules
+- `docs/` - Technical documentation and schemas
 
-
-
-\## 🗓️ Timeline
-
-\- \*\*Month 1:\*\* LSTM pattern learning + anomaly detection  
-
-\- \*\*Month 2:\*\* Audit confidence scoring algorithm  
-
-\- \*\*Month 3:\*\* Task estimation + production integration
-
-
-
-\## 📊 Current Phase
-
-\*\*Week 1-2:\*\* Data preparation and initial exploration
-
-
-
-\## 🔧 Tech Stack
-
-\- \*\*Framework:\*\* TensorFlow/Keras
-
-\- \*\*Data Processing:\*\* Pandas, NumPy
-
-\- \*\*Forecasting:\*\* Prophet
-
-\- \*\*Production API:\*\* FastAPI
-
-\- \*\*Database:\*\* PostgreSQL
-
-
-
-\## 🚀 Getting Started
-
+## 🚀 Getting Started
 ```bash
+# Clone repo
+git clone [your-repo-url]
+cd timesync-ai-research
 
-\# Install dependencies
-
+# Install dependencies
 pip install -r requirements.txt
 
-
-
-\# Launch Jupyter
-
+# Launch Jupyter
 jupyter notebook
-
 ```
 
+## 📈 Progress Tracking
+See `docs/weekly_progress.md` for detailed sprint updates.
 
-
-\## 📂 Repository Structure
-
-\- `data/raw/` - Original Kaggle datasets
-
-\- `data/processed/` - Cleaned, feature-engineered data
-
-\- Notebooks at root level for easy access
-
-\- Production code will go to team repo after validation
-
-
-
-\## 👥 Team
-
-\*\*AI Lead:\*\* Audrey  
-
-\*\*AI Support:\*\* Gab (integration phase)
-
-
+## 👥 Team
+**AI Lead:** Audrey  
+**AI Support:** Gab (integration phase)
 
 ---
-
-\*Private research repository - Production code merges to `se-backend-temp` after validation.\*
-
+*This is a research repository. Production code will be merged to `se-backend-temp/ai` after validation.*
