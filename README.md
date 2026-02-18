@@ -1,55 +1,103 @@
 # TimeSync AI Research
 
-ML experimentation repository for TimeSync's AI-powered attendance monitoring system.
+Machine Learning research for **Smart Timesheet Pre-fill** feature in OrasSync 2.0
 
-## 🎯 Project Goal
-Train LSTM neural networks to:
-- Learn individual employee attendance patterns (80%+ accuracy)
-- Detect anomalies in real-time
-- Generate Audit Confidence Scores (0-100%) for timesheets
-- Predict task durations based on historical performance
+## 🎯 Objective
+Build a Random Forest model that predicts daily timesheet activities based on historical patterns, achieving 80%+ accuracy.
 
-## 🗓️ Timeline
-**Month 1:** LSTM pattern learning + anomaly detection  
-**Month 2:** Audit confidence scoring algorithm  
-**Month 3:** Task estimation + production integration
+## 📊 Research Notebooks
 
-## 📊 Current Phase
-**Week 1-2:** Data preparation and initial exploration
+1. **01_data_exploration.ipynb** - Analyze timesheet patterns and identify recurring activities
+2. **02_feature_engineering.ipynb** - Extract ML features (frequency, consistency, trends)
+3. **03_model_training.ipynb** - Train Random Forest classifier
+4. **04_model_evaluation.ipynb** - Evaluate prediction accuracy
 
-## 🔧 Tech Stack
-- **Framework:** TensorFlow/Keras
-- **Data:** Pandas, NumPy
-- **Forecasting:** Prophet
-- **Production:** FastAPI (integration phase)
-- **Database:** PostgreSQL (production)
-
-## 📂 Repository Structure
-- `data/` - Training datasets (Kaggle + synthetic)
-- `notebooks/` - Jupyter experiments and analysis
-- `models/` - Trained models and checkpoints
-- `src/` - Production-ready Python modules
-- `docs/` - Technical documentation and schemas
-
-## 🚀 Getting Started
+## 🛠️ Setup
 ```bash
-# Clone repo
-git clone [your-repo-url]
-cd timesync-ai-research
-
 # Install dependencies
-pip install -r requirements.txt
+pip install -r requirements-ml.txt
 
-# Launch Jupyter
+# Start Jupyter
 jupyter notebook
 ```
 
-## 📈 Progress Tracking
-See `docs/weekly_progress.md` for detailed sprint updates.
+## 📁 Project Structure
+```
+timesync-ai-research/
+├── notebooks/              # ML research notebooks
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   ├── 03_model_training.ipynb
+│   └── 04_model_evaluation.ipynb
+├── data/                   # Sample and exported data
+├── models/                 # Saved trained models
+├── src/                    # Reusable Python modules
+│   ├── feature_engineering.py
+│   └── timesheet_predictor.py
+├── results/                # Experiment results
+└── archive-old-prophet-work/  # Previous research (archived)
+```
+
+## 🧠 ML Approach
+
+**Model:** Random Forest Classifier
+
+**Features:**
+- Day of week
+- Hour of day  
+- Activity frequency
+- Duration consistency
+- Recent trend
+- Month-end indicator
+
+**Target:** Binary classification (should activity appear today?)
+
+## 📈 Success Metrics
+- **Accuracy:** 80%+ prediction accuracy
+- **Time Savings:** 15 min → 30 sec per timesheet
 
 ## 👥 Team
-**AI Lead:** Audrey  
-**AI Support:** Gab (integration phase)
+- **AI Team Lead:** Audrey
+- **Project:** OrasSync 2.0
+- **Organization:** Lyceum of the Philippines University
+
+## 📅 Current Phase
+**Phase 1:** Data exploration and pattern analysis (Week 1)
+```
+
+**Save the file!** ✅
 
 ---
-*This is a research repository. Production code will be merged to `se-backend-temp/ai` after validation.*
+
+### **Step 3: Update .gitignore**
+
+Open `.gitignore` and **replace everything** with:
+```
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Models (large files)
+models/*.pkl
+*.h5
+
+# Data (sensitive)
+data/*.csv
+data/*.json
+!data/sample_*.csv
+
+# OS
+.DS_Store
+Thumbs.db
