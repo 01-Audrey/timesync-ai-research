@@ -1,18 +1,18 @@
-# ML Core Libraries
-scikit-learn==1.3.2
-numpy==1.24.3
-pandas==2.1.0
+# ML Core Libraries (Python 3.13 compatible)
+scikit-learn>=1.5.0
+numpy>=1.26.0
+pandas>=2.2.0
 
 # Model Persistence
-joblib==1.3.2
+joblib>=1.4.0
 
 # Data Processing
-python-dateutil==2.8.2
+python-dateutil>=2.8.2
 
 # Visualization
-matplotlib==3.7.1
-seaborn==0.12.2
+matplotlib>=3.8.0
+seaborn>=0.13.0
 
 # Jupyter
-jupyter==1.0.0
-ipykernel==6.25.0
+jupyter>=1.0.0
+ipykernel>=6.29.0
