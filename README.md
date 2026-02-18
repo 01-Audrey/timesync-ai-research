@@ -59,7 +59,6 @@ timesync-ai-research/
 ## 👥 Team
 - **AI Team Lead:** Audrey
 - **Project:** OrasSync 2.0
-- **Organization:** Lyceum of the Philippines University
 
 ## 📅 Current Phase
 **Phase 1:** Data exploration and pattern analysis (Week 1)
