@@ -1,0 +1,12 @@
+model_type: RandomForestClassifier
+n_estimators: 100
+max_depth: 10
+training_samples: 30
+test_samples: 14
+accuracy: 0.9285714285714286
+precision: 0.8888888888888888
+recall: 1.0
+f1_score: 0.9411764705882353
+cv_mean_accuracy: 0.9666666666666666
+features: ['day_of_week_encoded', 'hour_of_day', 'month', 'is_month_end', 'activity_frequency', 'avg_duration', 'duration_consistency', 'recent_trend', 'total_occurrences', 'is_billable', 'activity_id', 'user_id_encoded']
+training_date: 2026-02-18 23:48:22

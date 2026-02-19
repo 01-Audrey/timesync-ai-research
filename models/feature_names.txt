@@ -1,0 +1,12 @@
+day_of_week_encoded
+hour_of_day
+month
+is_month_end
+activity_frequency
+avg_duration
+duration_consistency
+recent_trend
+total_occurrences
+is_billable
+activity_id
+user_id_encoded
